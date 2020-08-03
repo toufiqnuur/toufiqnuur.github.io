@@ -117,6 +117,7 @@
     background-image: url(banner.jpg);
     background-size: cover;
     position: relative;
+    margin-top: -75px;
   }
 
   .jumbotron::after {
@@ -163,11 +164,5 @@
 
   .kontak h4, p {
     margin-right: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .jumbotron {
-    margin-top: -75px;
   }
 }
