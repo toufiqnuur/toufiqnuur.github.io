@@ -1,0 +1,168 @@
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 80px 0 30px 0;
+}
+
+.jumbotron p span {
+  padding: 10px 25px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.jumbotron span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.jumbotron h1 {
+  font-size: 35px;
+  font-family: Viga;
+}
+
+.jumbotron a {
+  margin-top: 25px;
+}
+
+.heading-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 30px 0;
+  font-family: Viga;
+}
+
+.about {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.about p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.about a {
+  margin: 5px;
+}
+
+.pendidikan {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.pendidikan p {
+  font-weight: 200;
+}
+
+.pendidikan span {
+  font-weight: 500;
+  color: #007aff !important;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 3px 20px rgba(0,0,0,0.3);
+  margin: 20px 0;
+}
+
+.kontak {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.kontak p {
+  margin: 30px 0;
+}
+
+.footer {
+  background: #eee;
+  margin-top: 120px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .navbar {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-link {
+    margin-right: 30px;
+    text-transform: uppercase;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #007aff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    text-align: left;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: -75px;
+  }
+
+  .jumbotron::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.8;
+    bottom: 0;
+  }
+
+  .jumbotron .container {
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .jumbotron img {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .heading-title {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 25px 0;
+  }
+
+  .about, .kontak {
+    text-align: left;
+  }
+
+  .pendidikan {
+    background-image: url(graduate.png);
+    background-size: cover;
+    text-align: left;
+  }
+
+  .pendidikan img {
+    opacity: 0;
+  }
+
+  .kontak h4, p {
+    margin-right: 30px;
+  }
+}
