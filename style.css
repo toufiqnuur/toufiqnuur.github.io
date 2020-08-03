@@ -97,6 +97,21 @@
     z-index: 1;
   }
 
+  .nav-link {
+    margin-right: 30px;
+    text-transform: uppercase;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #007aff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
   .jumbotron {
     text-align: left;
     background-image: url(banner.jpg);
@@ -154,20 +169,5 @@
 @media (min-width: 992px) {
   .jumbotron {
     margin-top: -75px;
-  }
-
-  .nav-link {
-    margin-right: 30px;
-    text-transform: uppercase;
-  }
-
-  .nav-link:hover::after {
-    content: '';
-    display: block;
-    border-bottom: 3px solid #007aff;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
   }
 }
