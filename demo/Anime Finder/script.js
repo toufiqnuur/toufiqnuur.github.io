@@ -47,9 +47,13 @@ function showDummy() {
   <div class="col-lg mb-1">
   <div class="dummy dummy-text"></div>
   </div>
+  </div>
+  <div class="row">
   <div class="col-lg mb-1">
   <div class="dummy dummy-text"></div>
   </div>
+  </div>
+  <div class="row">
   <div class="col-lg mb-1">
   <div class="dummy dummy-text"></div>
   </div>
