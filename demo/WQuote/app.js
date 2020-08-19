@@ -33,6 +33,29 @@ function pop() {
     alert(error.message)
   })
 }
+function direct() {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  provider.addScope('https://www.googleapis.com/auth/plus.login');
+
+  firebase.auth()
+  .signInWithRedirect(provider);
+}
+
+firebase.auth().getRedirectResult().then(function(result) {
+  if (result.credential) {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = result.credential.accessToken;
+    // [START_EXCLUDE]
+    document.getElementById('info').innerHTML = token;
+  } else {
+
+    // [END_EXCLUDE]
+  }
+  // The signed-in user info.
+  var user = result.user;
+}).catch(function(error) {
+  alert(error.message)
+})
 //End
 
 
@@ -40,7 +63,8 @@ function pop() {
 function daftar() {
   firebase.auth()
   .createUserWithEmailAndPassword(
-    email.value, sandi.value)
+    email.value,
+    sandi.value)
   .then(auth => {
     alert("Iam Signed Up Succesfully")
   }).catch(error => {
@@ -51,7 +75,8 @@ function daftar() {
 function masuk() {
   firebase.auth()
   .signInWithEmailAndPassword(
-    email.value, sandi.value)
+    email.value,
+    sandi.value)
   .then(auth => {
     alert("Iam Signed In Succesfully")
   }).catch(error => {
