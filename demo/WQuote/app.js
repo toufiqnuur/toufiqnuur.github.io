@@ -24,14 +24,20 @@ function pop() {
   provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 
   firebase.auth()
-  .signInWithPopup(provider)
-  .then(function(result) {
-    var token = result.cradential.accessToken;
+
+  .signInWithPopup(provider).then(function(result) {
+    var token = result.credential.accessToken;
     var user = result.user;
-    document.getElementById('info').innerHTML = user + token;
+    $('#info').innerHTML = token + user;
+    console.log(token)
+    console.log(user)
   }).catch(function(error) {
-    alert(error.message)
-  })
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    $('#info').innerHTML = error.code + error.message;
+    console.log(error.code)
+    console.log(error.message)
+  });
 }
 function direct() {
   var provider = new firebase.auth.GoogleAuthProvider();
@@ -95,3 +101,7 @@ firebase.auth().onAuthStateChanged(user => {
     document.getElementById('info').innerHTML = displayName + email + photoURL + isAnonymous + uid + providerData;
   }
 })
+
+function $(el) {
+  return document.querySelector(el);
+}
