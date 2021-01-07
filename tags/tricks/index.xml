@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tricks on My New Hugo Site</title>
+    <link>http://example.org/tags/tricks/</link>
+    <description>Recent content in tricks on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Dec 2020 02:31:39 +0000</lastBuildDate><atom:link href="http://example.org/tags/tricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Website Keren Untuk Styling Css</title>
+      <link>http://example.org/post/website-keren-untuk-styling-css/</link>
+      <pubDate>Sun, 13 Dec 2020 02:31:39 +0000</pubDate>
+      
+      <guid>http://example.org/post/website-keren-untuk-styling-css/</guid>
+      <description>satu  dua tiga empat lima   enam  tuju  delapan      Kalian semua pasti pernah menemukan website yang mempunyai elemen border yang melengkung tidak seperti biasanya.
+Awalnya mungkin kalian mengira itu adalah gambar svg yang dijadikan sebagai background.
+Namun, sebenarnya tidak semuanya memakai svg, ada juga yang memanfaatkan border css lho&amp;hellip;
+&amp;hellip;penasaran kok bisa ?
+Border css awalnya mimin pikir juga hanya bisa border lingkaran dan rounded, tapi secara tidak sengaja saat lihat video training react, mimin menemukan hal tersebut.</description>
+    </item>
+    
+  </channel>
+</rss>
