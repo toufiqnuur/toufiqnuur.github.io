@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="hero --h-300">
+  <div class="container">
+    <small class="--fw-bolder --tx-semi-light"><a class="--tx-semi-light --tx-decor-none hover:underline" href="#">Home</a>/<a class="--tx-semi-light --tx-decor-none hover:underline" href="#">Post</a>/</small>
+    <h1 class="--tx-shadow-sm --mt-half">{{ .Title }}</h1>
+    <h4 class="--d-flex --align-items-center"><img class="--w-2-half --h-2-half --circle --mr-half" src="{{ "author.png" | absURL }}" alt="author" />{{ .Params.author }}&nbsp;<span class="--fw-400">on {{ .PublishDate.Format "02 Jan 2006" }}</span></h4>
+  </div>
+</section>
+<section class="container">
+  <article class="post --bg-light --p-1 --mt-min-1-half --radius-half --box-shadow-sm --mb-2 --mr-2 --w-100">
+    {{ .Content }}
+  </article>
+  <div class="disqus --d-flex --justify-content-center --mb-2 --p-1 --bg-dark --w-100 --radius-half">
+    {{ template "_internal/disqus.html" . }}
+  </div>
+  {{ $related := .Site.RegularPages.Related . | first 5 }}
+  {{ with $related }}
+  <div class="related --mb-5 --d-flex --flex-wrap --justify-content-center">
+    {{ range . }}
+    <article class="card --box-shadow-sm">
+      <img class="card-image" src="{{ "default.png" | absURL }}" alt="#" />
+      <h2 class="card-title"><a href="#">{{ .Title }}</a></h2>
+      <p class="card-content --tx-muted">
+        Post By {{ .Params.author }} on {{ .PublishDate.Format "02 Jan 2006" }}
+      </p>
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+{{ end }}

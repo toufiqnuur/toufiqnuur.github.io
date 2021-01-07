@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+{{- partial "hero.html" . -}}
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 12 }}
+<section class="container article">
+  {{ range $paginator.Pages }}
+  <article class="card --box-shadow-sm">
+
+    {{- if .Params.thumb }}
+    <img class="card-image" src="{{ .Params.thumb }}" alt="{{ .Title }}" />
+    {{ else }}
+    <img class="card-image" src="{{ "default.png" | absURL }}" alt="{{ .Title }}" />
+    {{ end }}
+
+    {{- if .Params.tags }}
+    <p class="card-tag">
+      {{ range .Params.tags }}
+      <a href="{{ "/tag/" | relURL }}{{ . | urlize}}">{{ . }}</a>
+      {{ end }}
+    </p>
+    {{ end }}
+
+    <h2 class="card-title"><a href="{{ .URL }}">{{ .Title }}</a></h2>
+    <p class="card-content --tx-muted">
+      Post By {{ .Params.author }} on {{ .PublishDate.Format "02 Jan 2006" }}
+    </p>
+  </article>
+  {{ end }}
+  <a class="--fw-bolder --tx-secondary-light --tx-align-center --tx-decor-none hover:underline --w-100 --my-1" href="/article/"><span class="--py-half --px-1 hover:bg-primary hover:light">Load More Post</span></a>
+</section>
+<section class="container post-with-tag">
+  <div class="card-special">
+    <div class="special-credit">
+      <h2>Post by Tag</h2>
+      <p>
+        <span>Maintained by:</span> <br /> <a class="hover:primary" href="#">Toufiq Nuur</a>.
+      </p>
+    </div>
+  </div>
+  {{ range first 10 .Site.Taxonomies.tags.css }}
+  <div class="card-normal --box-shadow-md">
+    <h2 class="--tx-light --ml-1">#CSS</h2>
+    <h4 class="--tx-light --ml-1"><a class="--tx-decor-none --tx-light hover:primary hover:underline" href="#">{{ .Page.Title }}</a></h4>
+    <small class="--tx-secondary --ml-1">{{ .Page.PublishDate.Format "02 Jan 2006" }} • {{ .ReadingTime }} min read</small>
+    <p class="--fw-bolder --tx-light">
+      <img src="{{ if .Params.profile }}{{ .Params.profile }}{{ else }}{{ "author.png" | absURL }}{{ end }}" alt="{{ .Params.author }}" />{{ .Params.author }}
+    </p>
+  </div>
+  {{ end }}
+</section>
+{{ end }}

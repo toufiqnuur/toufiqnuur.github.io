@@ -1,0 +1,29 @@
+<header class="header --bg-glass-light --is-fixed-top">
+  <section class="container --is-xl">
+    <h1 class="header-logo"><a class="--tx-decor-none --tx-dark hover:primary" href="/">TNR</a></h1>
+    {{ with .Site.Menus.header }}
+    <nav class="header-navbar">
+      {{ range . }}
+      <a class="navbar-link" href="{{ .URL }}">{{- .Name }}</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+    <button class="menu-button" type="submit">
+      <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+    </button>
+    <form class="header-form">
+      <svg class="icon-finder" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input class="form-finder" type="text" placeholder="Explore..." />
+    </form>
+  </section>
+</header>
+
+<section class="header-modal">
+  {{ with .Site.Menus.header }}
+  <div class="modal-menu --bg-glass-light">
+    {{ range . }}
+    <a class="menu-link" href="{{ .URL }}">{{- .Name }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
