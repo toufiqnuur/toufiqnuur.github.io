@@ -93,6 +93,12 @@
 .\--tx-dark {
   color: #000!important;
 }
+.\--tx-serif {
+  font-family: "IBM Plex Serif";
+}
+.\--tx-uppercase {
+  text-transform: uppercase;
+}
 /* LINE HEIGHT */
 /* LINE HEIGHT */
 /* LINE HEIGHT */
