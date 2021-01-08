@@ -262,6 +262,8 @@ body {
   background: #ff3b2f;
   transform: rotate(315deg);
 }
+
+
 .post {
   overflow: hidden;
   max-width: 600px;
@@ -290,6 +292,15 @@ body {
   border-radius: .5rem;
   overflow: auto;
 }
+.version {
+  background: #ff3b2f;
+  color: #fff!important;
+  padding: 1px 3px;
+  border-radius: 2px;
+  font-weight: bolder;
+}
+
+
 @media(min-width:768px) {
   .menu-button {
     display: none;
