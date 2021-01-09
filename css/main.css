@@ -264,6 +264,11 @@ body {
 }
 
 
+.disqus_thread {
+  width: 100%;
+}
+
+
 .post {
   overflow: hidden;
   max-width: 600px;
