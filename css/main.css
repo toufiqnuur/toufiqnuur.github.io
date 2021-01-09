@@ -264,7 +264,7 @@ body {
 }
 
 
-.disqus_thread, iframe {
+#disqus_thread, iframe {
   width: 100%;
 }
 
