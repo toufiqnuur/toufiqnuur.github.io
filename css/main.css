@@ -266,6 +266,8 @@ body {
 
 #disqus_thread, iframe {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -322,6 +324,9 @@ body {
   }
   .related {
     max-width: 300px;
+  }
+  #disqus_thread {
+    max-width: 400px;
   }
 }
 @media(max-width:768px) {
