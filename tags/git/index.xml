@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TNR</title>
-    <link>https://toufiqnuur.github.io/</link>
-    <description>Recent content on TNR</description>
+    <title>git on TNR</title>
+    <link>https://toufiqnuur.github.io/tags/git/</link>
+    <description>Recent content in git on TNR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Jan 2021 03:56:59 +0000</lastBuildDate><atom:link href="https://toufiqnuur.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 03:56:59 +0000</lastBuildDate><atom:link href="https://toufiqnuur.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting Ssh Key Untuk Github Dengan Termux</title>
       <link>https://toufiqnuur.github.io/setting-ssh-key-untuk-github-dengan-termux/</link>
@@ -16,18 +16,6 @@
       <description>Ada beberapa cara untuk melakukan koneksi dengan github diantaranya dengan ssh. Mungkin kalian kurang familiar dengan cara ini, karena kebanyakan masih menggunakan https.
 Menggunakan metode https memang cukup mudah, tetapi kalian harus memasukkan username dan password setiap kali melakukan push ke github. Ribet bukan? Nah disinilah ssh hadir untuk menutupi kekurangan tersebut.
 Ssh memungkinkan kita melakukan push repository tanpa login. Ya tanpa memasukkan username dan password setiap kali melakukan push.</description>
-    </item>
-    
-    <item>
-      <title>General Sibling</title>
-      <link>https://toufiqnuur.github.io/general-sibling/</link>
-      <pubDate>Fri, 08 Jan 2021 03:26:36 +0000</pubDate>
-      
-      <guid>https://toufiqnuur.github.io/general-sibling/</guid>
-      <description>General sibling (~) di css jika kita implementasikan akan terlihat seperti ini.
-.post-img ~ p { background: yellow; } Dari contoh di atas maka seluruh paragraf yang berada dibawah elemen dengan class .post-img akan mempunyai background berwarna kuning.
-Bagaimana dengan elemen paragraf yang berada di atas elemen dengan class .post-img? Elemen yang berada diatasnya tetap normal, karena hanya menyeleksi elemen paragraf setelah elemen dengan class .post-img.
-Demo Supaya makin paham, begini contoh implementasinya.</description>
     </item>
     
   </channel>
