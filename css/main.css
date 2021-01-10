@@ -26,81 +26,10 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
-.header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  max-height: 2rem;
-  height: 100%;
-  z-index: 999;
-}
-.header > .container {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header .header-logo {
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-}
-.header-navbar {
-  flex-grow: 1;
-  display: flex;
-}
-.navbar-link {
-  color: rgba(0,0,0,0.8);
-  font-size: 1rem;
-  text-decoration: none;
-  padding-top: .35rem;
-  padding-bottom: .35rem;
-  margin-left: 1rem;
-  transition: .1s font-size;
-}
-.navbar-link.active,
-.navbar-link:hover {
-  color: #000;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-  transition: .1s font-size;
-}
-.icon-menu {
-  margin-right: 1rem;
-}
-.header-form {
-  display: flex;
-  align-items: center;
-}
-.icon-finder {
-  margin-right: -1.5rem;
-}
-.form-finder {
-  background: none;
-  border: none;
-  padding-left: 2rem;
-  width: 2rem;
-}
-.form-finder:focus {
-  width: 100%;
-  max-width: 400px;
-  outline: none;
-  transition: .5s width;
-  border-bottom: 1px solid rgba(0,0,0,0.8);
-}
-.form-finder::placeholder {
-  color: rgba(0,0,0,0.8);
-}
-.header-modal {
-  display: none;
-  z-index: 999;
-}
+
+
+
+
 .hero {
   color: #fff;
   width: 100%;
@@ -127,9 +56,9 @@ body {
   -o-object-fit: cover;
   height: 250px;
   width: 100%;
+  margin-bottom: 1rem;
 }
 .card-tag {
-  margin-bottom: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -139,6 +68,7 @@ body {
   text-decoration: none;
   border-radius: .15rem;
   margin-right: .25rem;
+  text-transform: uppercase;
 }
 .card-tag > a:hover {
   text-decoration: underline;
@@ -160,6 +90,22 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   line-height: 1.7;
+  display: flex;
+  align-items: center;
+  font-family: 'IBM Plex Serif';
+  font-size: 80%;
+}
+.card-content span {
+  font-weight: bolder;
+  color: #000;
+}
+.card-content img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-right: .75rem;
+  overflow: hidden;
 }
 .post-with-tag {
   display: flex;
@@ -248,21 +194,6 @@ body {
   margin-right: .5rem;
   object-fit: cover;
 }
-.newsletter {
-  box-shadow: 4px 4px 16px rgb(0,0,0);
-}
-.newsletter:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 13.5px;
-  left: -32px;
-  width: 64px;
-  height: 64px;
-  background: #ff3b2f;
-  transform: rotate(315deg);
-}
-
 
 #disqus_thread, iframe {
   width: 100%;
@@ -280,6 +211,14 @@ body {
 }
 .post img {
   width: 100%;
+}
+.post a {
+  color: #ff3b2f!important;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.post a:hover {
+  text-decoration: underline;
 }
 .post>p>code {
   color: #ff3b2f;
@@ -309,12 +248,6 @@ body {
 
 
 @media(min-width:768px) {
-  .menu-button {
-    display: none;
-  }
-  .article {
-    /*justify-content: space-between;*/
-  }
   .card {
     max-width: 450px;
   }
@@ -330,56 +263,6 @@ body {
   }
 }
 @media(max-width:768px) {
-  .header-logo {
-    flex-grow: 1;
-  }
-  .header-navbar {
-    display: none;
-  }
-  .header-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-  }
-  .modal-menu {
-    position: fixed;
-    top: 3.3rem;
-    right: 1rem;
-    display: flex;
-    width: 15ch;
-    text-align: center;
-    flex-direction: column;
-    border-radius: .25rem;
-    overflow: hidden;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-  }
-  .menu-button {
-    background: rgba(0,0,0,0);
-    border: none;
-    display: flex;
-    align-items: center;
-  }
-  .menu-button:focus {
-    outline: none;
-  }
-  .menu-link {
-    color: #000;
-    padding: .25rem 0;
-    text-decoration: none;
-  }
-  .menu-link:hover {
-    font-weight: bolder;
-  }
-  .menu-link.active {
-    background: blue;
-    color: #fff;
-    font-weight: bolder;
-    transition: .2s ease-in-out all;
-  }
   .post-with-tag {
     padding: 0 1rem;
   }
