@@ -16,27 +16,27 @@ Demo Supaya makin paham, begini contoh implementasinya."><link rel=stylesheet hr
 <a class=menu-link href=/tags>Tags</a>
 <a class=menu-link href=/guide>Guide</a>
 <a class=menu-link href=/book>Books</a></div></section><main><section class="hero --h-300"><div class=container><small class="--fw-bolder --tx-semi-light --tx-uppercase"><a class="--tx-semi-light --tx-decor-none hover:underline" href=https://toufiqnuur.github.io/>TNR</a>&nbsp;/
-<a class="--tx-semi-light --tx-decor-none hover:underline" href=https://toufiqnuur.github.io/post/>Posts</a>&nbsp;/</small><h1 class="--tx-shadow-sm --mt-half">General Sibling</h1><h4 class="--tx-serif --d-flex --align-items-center"><img class="--w-2-half --h-2-half --circle --mr-half" src=https://toufiqnuur.github.io/img/author.png alt=author>Toufiq Nuur&nbsp;<span class=--fw-400>on 08 Jan 2021</span></h4><a class="--tx-decor-none --tx-semi-light hover:underline --mr-half" href=/tags/css>#css</a></div></section><section class=container><article class="post --bg-light --p-1 --mt-min-1-half --radius-half --box-shadow-sm --mb-2 --mr-2 --w-100"><p>General sibling (~) di css jika kita implementasikan akan terlihat seperti ini.</p><div class=highlight><pre style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-css data-lang=css>.<span style=color:#fec418>post-img</span> <span style=color:#5bc4bf>~</span> <span style=color:#5bc4bf>p</span> {
-  <span style=color:#815ba4>background</span>: <span style=color:#815ba4>yellow</span>;
+<a class="--tx-semi-light --tx-decor-none hover:underline" href=https://toufiqnuur.github.io/post/>Posts</a>&nbsp;/</small><h1 class="--tx-shadow-sm --mt-half">General Sibling</h1><h4 class="--tx-serif --d-flex --align-items-center"><img class="--w-2-half --h-2-half --circle --mr-half" src=https://toufiqnuur.github.io/img/author.png alt=author>Toufiq Nuur&nbsp;<span class=--fw-400>on 08 Jan 2021</span></h4><a class="--tx-decor-none --tx-semi-light hover:underline --mr-half" href=/tags/css>#css</a></div></section><section class=container id=single><article class="post --bg-light --p-1 --mt-min-1-half --radius-half --box-shadow-sm --mb-2 --mr-2 --w-100"><p>General sibling (~) di css jika kita implementasikan akan terlihat seperti ini.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-css data-lang=css>.<span style=color:#3f6e75>post-img</span> <span style=color:#000>~</span> <span style=color:#000>p</span> {
+  <span style=color:#a90d91>background</span>: <span style=color:#a90d91>yellow</span>;
 }
-</code></pre></div><p>Dari contoh di atas maka seluruh <code>paragraf</code> yang berada dibawah elemen dengan class <code>.post-img</code> akan mempunyai background berwarna kuning.</p><p>Bagaimana dengan elemen <code>paragraf</code> yang berada di atas elemen dengan class <code>.post-img</code>? Elemen yang berada diatasnya tetap normal, karena hanya menyeleksi elemen <code>paragraf</code> setelah elemen dengan class <code>.post-img</code>.</p><h2 id=demo>Demo</h2><p>Supaya makin paham, begini contoh implementasinya.</p><p>HTML:</p><div class=highlight><pre style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-html data-lang=html>&lt;<span style=color:#5bc4bf>p</span>&gt;
+</code></pre></div><p>Dari contoh di atas maka seluruh <code>paragraf</code> yang berada dibawah elemen dengan class <code>.post-img</code> akan mempunyai background berwarna kuning.</p><p>Bagaimana dengan elemen <code>paragraf</code> yang berada di atas elemen dengan class <code>.post-img</code>? Elemen yang berada diatasnya tetap normal, karena hanya menyeleksi elemen <code>paragraf</code> setelah elemen dengan class <code>.post-img</code>.</p><h2 id=demo>Demo</h2><p>Supaya makin paham, begini contoh implementasinya.</p><p>HTML:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-html data-lang=html>&lt;<span style=color:#000>p</span>&gt;
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consequatur debitis eveniet iste ratione quibusdam hic accusamus! Eveniet dignissimos ad, nihil molestiae aspernatur consequuntur officia voluptatum tenetur velit voluptate. Temporibus!
-&lt;/<span style=color:#5bc4bf>p</span>&gt;
-&lt;<span style=color:#5bc4bf>div</span> <span style=color:#06b6ef>class</span><span style=color:#5bc4bf>=</span><span style=color:#48b685>&#34;line&#34;</span>&gt;&lt;/<span style=color:#5bc4bf>div</span>&gt;
-&lt;<span style=color:#5bc4bf>p</span>&gt;
+&lt;/<span style=color:#000>p</span>&gt;
+&lt;<span style=color:#000>div</span> <span style=color:#836c28>class</span><span style=color:#000>=</span><span style=color:#c41a16>&#34;line&#34;</span>&gt;&lt;/<span style=color:#000>div</span>&gt;
+&lt;<span style=color:#000>p</span>&gt;
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consequatur debitis eveniet iste ratione quibusdam hic accusamus! Eveniet dignissimos ad, nihil molestiae aspernatur consequuntur officia voluptatum tenetur velit voluptate. Temporibus!
-&lt;/<span style=color:#5bc4bf>p</span>&gt;
-&lt;<span style=color:#5bc4bf>p</span>&gt;
+&lt;/<span style=color:#000>p</span>&gt;
+&lt;<span style=color:#000>p</span>&gt;
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio consequatur debitis eveniet iste ratione quibusdam hic accusamus! Eveniet dignissimos ad, nihil molestiae aspernatur consequuntur officia voluptatum tenetur velit voluptate. Temporibus!
-&lt;/<span style=color:#5bc4bf>p</span>&gt;
-</code></pre></div><p>CSS:</p><div class=highlight><pre style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-css data-lang=css>.<span style=color:#fec418>line</span> {
-  <span style=color:#815ba4>width</span>: <span style=color:#f99b15>100</span><span style=color:#fec418>%</span>;
-  <span style=color:#815ba4>height</span>: <span style=color:#f99b15>1.5</span><span style=color:#fec418>px</span>;
-  <span style=color:#815ba4>background</span>: <span style=color:#815ba4>tomato</span>;
+&lt;/<span style=color:#000>p</span>&gt;
+</code></pre></div><p>CSS:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-css data-lang=css>.<span style=color:#3f6e75>line</span> {
+  <span style=color:#a90d91>width</span>: <span style=color:#1c01ce>100</span><span style=color:#a90d91>%</span>;
+  <span style=color:#a90d91>height</span>: <span style=color:#1c01ce>1.5</span><span style=color:#a90d91>px</span>;
+  <span style=color:#a90d91>background</span>: <span style=color:#a90d91>tomato</span>;
 }
-.<span style=color:#fec418>line</span> <span style=color:#5bc4bf>~</span> <span style=color:#5bc4bf>p</span> {
-  <span style=color:#815ba4>background</span>: <span style=color:#815ba4>yellow</span>;
-  <span style=color:#815ba4>padding</span>: <span style=color:#f99b15>10</span><span style=color:#fec418>px</span>;
+.<span style=color:#3f6e75>line</span> <span style=color:#000>~</span> <span style=color:#000>p</span> {
+  <span style=color:#a90d91>background</span>: <span style=color:#a90d91>yellow</span>;
+  <span style=color:#a90d91>padding</span>: <span style=color:#1c01ce>10</span><span style=color:#a90d91>px</span>;
 }
 </code></pre></div><p>RESULT:</p><p><img src=https://toufiqnuur.github.io/img/post/general-sibling.jpg alt=general-sibling.jpg></p><h2 id=browser-support>Browser Support</h2><p>Chrome: <span class=version>All</span> |
 Safari: <span class=version>3+</span> |

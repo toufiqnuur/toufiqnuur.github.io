@@ -50,6 +50,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin-bottom: 2rem;
+  max-width: 800px;
 }
 .card-image {
   object-fit: cover;
@@ -237,6 +238,8 @@ body {
   padding: 1rem;
   border-radius: .5rem;
   overflow: auto;
+  border: 1px solid #ccc;
+  background: rgba(0,0,0,0.1)!important;
 }
 .version {
   background: #ff3b2f;
