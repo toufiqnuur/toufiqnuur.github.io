@@ -106,7 +106,7 @@ button:focus, button:hover {
   overflow: auto;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  
   padding: 30px 1rem 1rem 1rem;
 }
 .pricing__card {
@@ -120,6 +120,7 @@ button:focus, button:hover {
   color: #000;
   max-width: 250px;
   border-radius: 1rem;
+  margin-right: 1rem;
   box-shadow: 0 0 1rem rgba(0,0,0,0.1);
 }
 .pricing__card:last-child:after {
