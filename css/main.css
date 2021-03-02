@@ -113,3 +113,8 @@ body {
       #footer a:hover {
         background: linear-gradient(90deg, rgba(238,239,240,0.1) 0%, rgba(73,146,220,0.5) 27%, rgba(58,143,229,0.1) 49%, rgba(72,189,255,0.1) 73%, rgba(244,246,246,0.1) 100%);
       }
+      #content .card-img-top {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: rgba(0,0,0,0.1);
+      }
