@@ -118,3 +118,8 @@ body {
         aspect-ratio: 16/9;
         background: rgba(0,0,0,0.1);
       }
+      
+      .ads-square {
+        background: rgba(0,0,0,0.1);
+        aspect-ratio: 1/1;
+      }
