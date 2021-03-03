@@ -20,4 +20,13 @@ class Tabbar {
       mediumBar = new Tabbar('.navbar .nav-link')
       bottomBar.enable(0,'actived')
       mediumBar.enable(null,'actived')
-    
+
+let byMonth, byYear
+byMonth = document.querySelector('#month')
+byYear = document.querySelector('#year')
+arsipList = document.querySelector('#arsip-list')
+
+byMonth.onchange = event => {
+  arsipList.innerHTML = event.target.value
+  //arsipList.innerHTML = arsipList.children
+}
