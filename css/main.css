@@ -24,14 +24,14 @@ body {
 }
 
 .top-navbar {
-  margin-top: 56px;
+  margin-top: 56.8182px;
 }
 .bottom-navbar {
   margin-bottom: 60px;
 }
 @media(min-width:768px) {
   .top-navbar {
-    margin-top: 64px;
+    margin-top: 65px;
   }
   .bottom-navbar {
     margin-bottom: 0;
