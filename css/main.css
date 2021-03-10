@@ -123,3 +123,11 @@ body {
   background: rgba(0,0,0,0.1);
   aspect-ratio: 1/1;
 }
+
+.highlight {
+  font-weight: bold!important;
+}
+.highlight pre {
+  padding: 1rem;
+  border-radius: .25rem;
+}
